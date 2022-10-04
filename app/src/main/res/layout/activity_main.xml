@@ -1,213 +1,611 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/GridLayout1"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:columnCount="2"
-    android:rowCount="8"
-    tools:context=".MainActivity"
-    android:background="#f5f2e3"
-    android:clipChildren="false"
-    android:fillViewport="true"
-    android:orientation="vertical"
-    android:useDefaultMargins="true"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
-
-    <SearchView
-        android:id="@+id/search_bar"
-        android:layout_row="2"
-        android:layout_column="0"
-        android:layout_columnSpan="2"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <GridLayout
+        android:id="@+id/GridLayout1"
         android:layout_width="match_parent"
-        android:background="@drawable/round_corner_white"
-        android:elevation="2dp"
-        android:iconifiedByDefault="false"
-        android:queryBackground="@android:color/transparent"
-        android:queryHint="@string/search_hint"
-        android:searchIcon="@drawable/ic_menu_search_custom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_row="0"
-        android:layout_column="0"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:elevation="4dp"
-        android:text="@string/hello_name"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:columnCount="2"
+        android:rowCount="9"
+        tools:context=".MainActivity"
+        android:background="#f5f2e3"
+        android:clipChildren="false"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:useDefaultMargins="true"
+        android:scrollbars="vertical">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="1"
-        android:layout_column="0"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
-        android:text="@string/ready_player_one"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_row="0"
-        android:layout_rowSpan="2"
-        android:layout_column="1"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_gravity="end"
-        android:background="@drawable/round_corner_white"
-        android:clipToOutline="true"
-        android:contentDescription="@string/image_desc_profile"
-        android:src="@drawable/profile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.cardview.widget.CardView
-        android:layout_columnSpan="2"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_row="3"
-        android:layout_column="0"
-        app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="10dp"
-        app:cardMaxElevation="1dp"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_bar"
-        app:contentPadding="10dp">
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <SearchView
+            android:id="@+id/search_bar"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:background="@drawable/round_corner_white"
+            android:elevation="2dp"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@android:color/transparent"
+            android:queryHint="@string/search_hint"
+            android:searchIcon="@drawable/ic_menu_search_custom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_margin="5dp"
-                android:text="@string/in_10_minutes"
-                android:textColor="#edae40"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.980"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.020"
-                tools:ignore="TextContrastCheck" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:elevation="4dp"
+            android:text="@string/hello_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:layout_margin="5dp"
-                android:background="@drawable/round_corner_blue"
-                android:paddingLeft="10dp"
-                android:paddingTop="3dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="3dp"
-                android:text="@string/class_name"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.020
-"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.020" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/ready_player_one"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/class_topic"
-                android:textColor="#40434c"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.065"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.20" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:layout_column="1"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="end"
+            android:background="@drawable/round_corner_white"
+            android:clipToOutline="true"
+            android:contentDescription="@string/image_desc_profile"
+            android:src="@drawable/profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="@string/class_teacher"
-                android:textStyle="bold"
-                android:textColor="#ababab"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.045"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="245dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="1dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.407"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_bar">
 
-            <TextView
-                android:id="@+id/textView9"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:height="1dp"
-                android:background="#ababab"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.45" />
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/textView10"
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="5dp"
+                    android:text="@string/in_10_minutes"
+                    android:textColor="#edae40"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.980"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.020"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/round_corner_blue"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/class_name_math"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.020
+"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.020" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/class_topic"
+                    android:textColor="#40434c"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.065"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.25" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/class_teacher"
+                    android:textColor="#ababab"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.045"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:height="1dp"
+                    android:background="#ababab"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.57" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="136dp"
+                    android:text="@string/class_member"
+                    android:textColor="#ababab"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.045"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="122dp"
+                    android:background="@drawable/round_corner_orange"
+                    android:text="@string/class_join"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.874"
+                    app:layout_constraintStart_toEndOf="@+id/textView10"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="start"
+            android:textStyle="bold"
+            android:text="@string/class_upcoming"
+            android:layout_marginStart="20dp"
+            android:textSize="16sp"/>
+
+        <Button
+            android:layout_row="5"
+            android:layout_column="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:textStyle="bold"
+            android:text="@string/view_all"
+            android:layout_marginEnd="20dp"
+            android:textSize="12sp"
+            android:textColor="#cc9c22"
+            android:backgroundTint="#f5f2e3"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:contentDescription="@string/class_upcoming"
+            android:scrollbars="none">
+
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="140dp"
-                android:text="@string/class_member"
-                android:textColor="#ababab"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.045"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="2dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="1dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:contentPadding="0dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/round_corner_blue"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="3dp"
+                        android:text="@string/class_name_math"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.020
+"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.020" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:maxWidth="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_topic_math"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginStart="15dp"
+                        android:textStyle="bold"
+                        android:textColor="#3c3f48"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_teacher"
+                        android:textSize="10sp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="82dp"
+                        tools:ignore="SmallSp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_time_math"
+                        android:layout_gravity="bottom"
+                        android:textSize="13sp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#b6a283"/>
 
-            <Button
-                android:id="@+id/button"
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginEnd="-25dp"
+                        android:src="@drawable/ic_circle_card_custom2"
+                        android:layout_gravity="end"
+                        android:elevation="0dp"
+                        android:contentDescription="@string/circles" />
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginEnd="-25dp"
+                        android:src="@drawable/ic_circle_card_custom1"
+                        android:layout_gravity="end"
+                        android:elevation="0dp"
+                        android:contentDescription="@string/circles" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@id/card1"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="1dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:contentPadding="0dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/round_corner_blue"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="3dp"
+                        android:text="@string/class_name_science"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.020
+"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.020" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:maxWidth="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_topic_science"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginStart="15dp"
+                        android:textStyle="bold"
+                        android:textColor="#3c3f48"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_teacher_science"
+                        android:textSize="10sp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="82dp"
+                        tools:ignore="SmallSp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_time_science"
+                        android:layout_gravity="bottom"
+                        android:textSize="13sp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#b6a283"/>
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginEnd="-25dp"
+                        android:src="@drawable/ic_circle_card_custom2"
+                        android:layout_gravity="end"
+                        android:elevation="0dp"
+                        android:contentDescription="@string/circles" />
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginEnd="-25dp"
+                        android:src="@drawable/ic_circle_card_custom1"
+                        android:layout_gravity="end"
+                        android:elevation="0dp"
+                        android:contentDescription="@string/circles" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@id/card2"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="1dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:contentPadding="0dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/round_corner_blue"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="3dp"
+                        android:text="@string/class_name_computer"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.020
+"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.020" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:maxWidth="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_topic_computer"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginStart="15dp"
+                        android:textStyle="bold"
+                        android:textColor="#3c3f48"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_teacher_computer"
+                        android:textSize="10sp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="82dp"
+                        tools:ignore="SmallSp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_time_computer"
+                        android:layout_gravity="bottom"
+                        android:textSize="13sp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#b6a283"/>
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginEnd="-25dp"
+                        android:src="@drawable/ic_circle_card_custom2"
+                        android:layout_gravity="end"
+                        android:elevation="0dp"
+                        android:contentDescription="@string/circles" />
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginEnd="-25dp"
+                        android:src="@drawable/ic_circle_card_custom1"
+                        android:layout_gravity="end"
+                        android:elevation="0dp"
+                        android:contentDescription="@string/circles" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_row="7"
+            android:layout_column="0"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="start"
+            android:textStyle="bold"
+            android:text="@string/class_assignments"
+            android:layout_marginStart="20dp"
+            android:textSize="16sp"/>
+
+        <Button
+            android:layout_row="7"
+            android:layout_column="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:textStyle="bold"
+            android:text="@string/view_all"
+            android:layout_marginEnd="20dp"
+            android:textSize="12sp"
+            android:textColor="#cc9c22"
+            android:backgroundTint="#f5f2e3"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_row="8"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:contentDescription="@string/class_assignments"
+            android:scrollbars="none"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="124dp"
-                android:text="Button"
-                android:background="@drawable/round_corner_orange"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.874"
-                app:layout_constraintStart_toEndOf="@+id/textView10"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="2dp">
 
-</GridLayout>
-<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardOne"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="1dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:contentPadding="0dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/class_a1"
+                            android:textStyle="bold"
+                            android:layout_margin="15dp"
+                            android:textSize="16sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/class_name_math"
+                            android:textSize="10sp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="40dp"
+                            tools:ignore="SmallSp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/class_a1_inf"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="60dp"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTwo"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@id/cardOne"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="1dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:contentPadding="10dp">
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardThree"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@id/cardTwo"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="1dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:contentPadding="10dp">
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </HorizontalScrollView>
+    </GridLayout>
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+</ScrollView>
