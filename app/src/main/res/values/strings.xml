@@ -7,4 +7,6 @@
     <string name="in_10_minutes">In 10:00 Min</string>
     <string name="class_name">Math</string>
     <string name="class_topic">Square and Square Roots</string>
+    <string name="class_teacher">By : Mr. Sarman Joshi</string>
+    <string name="class_member">20+ Members joined</string>
 </resources>
