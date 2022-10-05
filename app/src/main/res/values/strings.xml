@@ -3,7 +3,7 @@
     <string name="hello_name">Hello, CopyCat!</string>
     <string name="ready_player_one">Are you ready for today\'s class?</string>
     <string name="image_desc_profile">Profile Image</string>
-    <string name="search_hint">Search class, Assignments etc.,</string>
+    <string name="search_hint"><font size="12">Search class, Assignments etc.,</font></string>
     <string name="in_10_minutes">In 10:00 Min</string>
 
     <string name="class_name_math">Math</string>
@@ -32,8 +32,13 @@
 
     <string name="class_a1">Assignment 1</string>
     <string name="class_a1_inf">Rational Numbers assignment, Very important for your next exam&#8230;</string>
+    <string name="class_a1_drt">1 Day Left</string>
+
     <string name="class_a2">Assignment 2</string>
     <string name="class_a2_inf">Crop Production &amp; Mgt. Very important for your next exam&#8230;</string>
+    <string name="class_a2_drt">4 Days Left</string>
+
     <string name="class_a3">Assignment 3</string>
     <string name="class_a3_inf">Container Orchestration assignment, Very important for your next exam&#8230;</string>
+    <string name="class_a3_drt">5 Days Left</string>
 </resources>
