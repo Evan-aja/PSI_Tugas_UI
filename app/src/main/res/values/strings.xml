@@ -41,4 +41,14 @@
     <string name="class_a3">Assignment 3</string>
     <string name="class_a3_inf">Container Orchestration assignment, Very important for your next exam&#8230;</string>
     <string name="class_a3_drt">5 Days Left</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="class_view">View Class</string>
+    <string name="class_back">Back</string>
+    <string name="class_desc"><font><b>Squares</b></font> and <font><b>square roots</b></font> both concepts are opposite in nature to each other. Squares are the numbers, generated after multiplying a value by itself. Whereas square root of a number is value which on getting multiplied by itself gives the original value.</string>
 </resources>
