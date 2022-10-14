@@ -5,6 +5,7 @@
     <string name="image_desc_profile">Profile Image</string>
     <string name="search_hint"><font size="12">Search class, Assignments etc.,</font></string>
     <string name="in_10_minutes">In 10:00 Min</string>
+    <string name="search_button">Search</string>
 
     <string name="class_name_math">Math</string>
     <string name="class_topic_math">Rational Numbers</string>
@@ -20,6 +21,16 @@
     <string name="class_topic_computer">Container Orchestration</string>
     <string name="class_teacher_computer">By : Mr. CopyCat</string>
     <string name="class_time_computer">19 Sept | 1:00 PM</string>
+
+    <string name="class_name_multimedia">Multimedia</string>
+    <string name="class_topic_multimedia">Creating YouTube Video</string>
+    <string name="class_teacher_multimedia">By : Mr. NiceGuy</string>
+    <string name="class_time_multimedia">19 Sept | 4:00 PM</string>
+
+    <string name="class_name_statistic">Statistics</string>
+    <string name="class_topic_statistic">Counting Probability</string>
+    <string name="class_teacher_statistic">By : Mr. Men in Black</string>
+    <string name="class_time_statistic">20 Sept | 1:00 PM</string>
 
     <string name="class_topic">Square and Square Roots</string>
     <string name="class_teacher">By : Mr. Sarman Joshi</string>
@@ -41,6 +52,15 @@
     <string name="class_a3">Assignment 3</string>
     <string name="class_a3_inf">Container Orchestration assignment, Very important for your next exam&#8230;</string>
     <string name="class_a3_drt">5 Days Left</string>
+
+    <string name="class_a4">Assignment 4</string>
+    <string name="class_a4_inf">Creating YouTube Video assignment, Very important for your next exam&#8230;</string>
+    <string name="class_a4_drt">7 Days Left</string>
+
+    <string name="class_a5">Assignment 5</string>
+    <string name="class_a5_inf">Counting Probability assignment, Very important for your next exam&#8230;</string>
+    <string name="class_a5_drt">8 Days Left</string>
+
     <string name="title_activity_main2">MainActivity2</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

@@ -19,7 +19,7 @@
         android:useDefaultMargins="true"
         android:scrollbars="vertical">
 
-        <SearchView
+        <androidx.appcompat.widget.SearchView
             android:id="@+id/search_bar"
             android:layout_row="2"
             android:layout_column="0"
@@ -40,6 +40,20 @@
             app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:background="@drawable/round_corner_orange"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="end"
+            android:text="@string/search_button" />
 
         <TextView
             android:id="@+id/textView"
@@ -496,6 +510,166 @@
                         android:elevation="0dp"
                         android:contentDescription="@string/circles" />
                 </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card4"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@id/card3"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="1dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:contentPadding="0dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/round_corner_blue"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="3dp"
+                        android:text="@string/class_name_multimedia"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.020
+"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.020" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:maxWidth="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_topic_multimedia"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginStart="15dp"
+                        android:textStyle="bold"
+                        android:textColor="#3c3f48"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_teacher_multimedia"
+                        android:textSize="10sp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="82dp"
+                        tools:ignore="SmallSp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_time_multimedia"
+                        android:layout_gravity="bottom"
+                        android:textSize="13sp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#b6a283"/>
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginEnd="-25dp"
+                        android:src="@drawable/ic_circle_card_custom2"
+                        android:layout_gravity="end"
+                        android:elevation="0dp"
+                        android:contentDescription="@string/circles" />
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginEnd="-25dp"
+                        android:src="@drawable/ic_circle_card_custom1"
+                        android:layout_gravity="end"
+                        android:elevation="0dp"
+                        android:contentDescription="@string/circles" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card5"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@id/card4"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="1dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:contentPadding="0dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/round_corner_blue"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="3dp"
+                        android:text="@string/class_name_statistic"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.020
+"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.020" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:maxWidth="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_topic_statistic"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginStart="15dp"
+                        android:textStyle="bold"
+                        android:textColor="#3c3f48"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_teacher_statistic"
+                        android:textSize="10sp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="82dp"
+                        tools:ignore="SmallSp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_time_statistic"
+                        android:layout_gravity="bottom"
+                        android:textSize="13sp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#b6a283"/>
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginEnd="-25dp"
+                        android:src="@drawable/ic_circle_card_custom2"
+                        android:layout_gravity="end"
+                        android:elevation="0dp"
+                        android:contentDescription="@string/circles" />
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginEnd="-25dp"
+                        android:src="@drawable/ic_circle_card_custom1"
+                        android:layout_gravity="end"
+                        android:elevation="0dp"
+                        android:contentDescription="@string/circles" />
+                </androidx.cardview.widget.CardView>
             </RelativeLayout>
         </HorizontalScrollView>
 
@@ -673,6 +847,96 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/class_a3_drt"
+                        android:textColor="#b6a283"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="100dp"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardFour"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@id/cardThree"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="1dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:contentPadding="0dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_a4"
+                        android:textStyle="bold"
+                        android:layout_margin="15dp"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_name_multimedia"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="40dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_a4_inf"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="58dp"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_a4_drt"
+                        android:textColor="#b6a283"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="100dp"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardFive"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@id/cardFour"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="1dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:contentPadding="0dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_a5"
+                        android:textStyle="bold"
+                        android:layout_margin="15dp"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_name_statistic"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="40dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_a5_inf"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="58dp"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/class_a5_drt"
                         android:textColor="#b6a283"
                         android:textSize="11sp"
                         android:textStyle="bold"
